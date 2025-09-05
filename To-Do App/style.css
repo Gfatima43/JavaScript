@@ -1,0 +1,107 @@
+/* General Styles */
+body {
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.todo-container {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    text-align: center;
+    animation: fadeIn 1s ease-in;
+}
+
+.todo-container h1 {
+    margin-bottom: 1rem;
+    color: #ff4d6d;
+    font-size: 2rem;
+    letter-spacing: 1px;
+}
+
+.input-section {
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+.input-section input {
+    flex: 1;
+    padding: 0.7rem;
+    border-radius: 10px 0 0 10px;
+    border: 2px solid #ff4d6d;
+    outline: none;
+    font-size: 1rem;
+}
+
+.input-section button {
+    padding: 0.7rem 1rem;
+    border: none;
+    background: #ff4d6d;
+    color: #fff;
+    border-radius: 0 10px 10px 0;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+.input-section button:hover {
+    background: #ff2e52;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    background: #f8f8f8;
+    margin: 0.5rem 0;
+    padding: 0.7rem;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: transform 0.2s ease-in-out;
+}
+
+ul li:hover {
+    transform: scale(1.05);
+}
+
+ul li.completed {
+    text-decoration: line-through;
+    color: #888;
+    background: #ffe2e6;
+}
+
+.delete-btn {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    color: #ff4d6d;
+    transition: 0.3s;
+}
+
+.delete-btn:hover {
+    color: #ff2e52;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+} 
